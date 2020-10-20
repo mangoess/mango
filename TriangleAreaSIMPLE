@@ -1,0 +1,17 @@
+import sys
+width = int(input("Width ") )
+height = int(input("Almost done but what's the Height? ") )
+total = width * height / 2
+print("The Answer Is",total)
+print("\nThank You, I Hope You Enjoyed Using This!")
+
+def scriptz():
+    print("Hey! Should We Try Again??")
+    width = int(input("May I ask The Width?") )
+    height = int(input("We're SOO Closze! What's The Height? ") )
+    total = width * height / 2
+    print("The Answer Is",total)
+    print("\nThank You",user,"I'm glad that you are using my program! :D")
+
+while True:
+ scriptz()
