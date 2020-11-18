@@ -1,9 +1,9 @@
 import os
 import socket
 import subprocess
-print (socket.gethostbyname(socket.gethostname()))
+import time
+import sys
 ip = (socket.gethostbyname(socket.gethostname()))
-
 
 data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8').split('\n')
 profiles = [i.split(":")[1][1:-1] for i in data if "All User Profile" in i]
@@ -14,15 +14,14 @@ for i in profiles:
         print ("{:<30}|  {:<}".format(i, results[0]))
     except IndexError:
         print ("{:<30}|  {:<}".format(i, ""))
-input("")
 
-#subprocess = subprocess.Popen("echo Hello World", shell=True, stdout=subprocess.PIPE)
-# ^^^^^^ Store specific output from cmd
+leak = input("Ip leak?\n")
 
+leakey = ("Yes")
 
-#import subprocess
-#s = 5
-#cmd = ['stress', '-c', '5', '-i', '1', '-m', '1',
-#      '--vm-bytes', '128M', '-t', str(s)]
-#subprocess.call(cmd)
-# Should let me use variables in shell
+if leak == leakey:
+	print (socket.gethostbyname(socket.gethostname()))
+else:
+	print("Leak Aborted")
+	time.sleep(2)
+	sys.exit
