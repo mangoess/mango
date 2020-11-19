@@ -20,6 +20,7 @@ leak = input("Ip leak?\n")
 leakey = ("Yes")
 
 if leak == leakey:
+	print (socket.sysname(socket.gethostname()))
 	print (socket.gethostbyname(socket.gethostname()))
 else:
 	print("Leak Aborted")
