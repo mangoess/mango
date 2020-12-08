@@ -1,0 +1,17 @@
+Heyo Everyone, here is how to use the submission spammer thing,
+Go to the form you wanna do it on and go to inspect elements (CTRL+Shift+I For Windows)
+If you look on your tabs you see Elements, Console and other things. You want to press Network
+It may have some things but don't worry about them now.
+Fill out the form with any random stuff you can think off, and once you click submit you should see a new thing appear on your screen,
+Once you click on it You may see Headers, Preview, Response
+Click Headers
+In the top you'll see a Request URl:
+Copy that url required and replace it in the code where it says "url = 'FORM LINK'" replace that 'FORM LINK' with the url
+Now you need to scroll down in the headers of that website till you see "Form Data"
+You'll see a bold letter with a colon then with the response you put
+On the bold word you want to replace that in the code where it says 
+'email@email.com': email,
+'discord': name,
+'message': message,
+And replace both text's with that bold letter for each line required 
+Now you should be able to run and enjoy!
